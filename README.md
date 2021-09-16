@@ -21,8 +21,13 @@ As well as, when visualisation is concerened, this project would be perfect fit 
 This module is fully focussed to get all the tabular data for the whatsapp groups or for a specific user in the whatsapp groups
 Calling the class, is done some way like this.
 
+To install this library first make a new virtual env and type:
+```bash
+pip install WhatsappInspect==1.0.3
+```
+
 ```py
-from functions import WpFunctions
+from wpa.functions import WpFunctions
 wpf = WpFunctions(path)
 ```
 Here `path` argument is the path to the exported whatsapp chats of a groups or a chats.
@@ -94,7 +99,7 @@ And for arg as `ALL` it will be just return the same result as above but for all
 #### Features in `visualize.py` 
 This module is solely focussed to get the pictorial data based on the data present in the raw form of the users and all other informations, in order to use this type this:
 ```
-from visualize import WpVisualize
+from wpa.visualize import WpVisualize
 wpv = WpVisualize(test_path)
 ```
 Here `path` argument is the path to the exported whatsapp chats of a groups or a chats.
@@ -103,6 +108,14 @@ In order to get the group chatting activity based on `day` use this:
 ```py
 wpv.get_active_days('ALL')
 ```
+**NOTE**
+In case, there is an error in showing the plots in colab/jupyter notebook, then type these commands to install the compatible versions of matplotlib.
+
+```bash
+python -m pip uninstall matplotlib
+pip install matplotlib==3.1.3
+```
+
 This is the result we see after that:
 
 ![image](https://user-images.githubusercontent.com/58508471/133550924-8d2e0a2f-d1ba-45e5-9f09-6c71f3478a0b.png)
