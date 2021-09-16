@@ -2,6 +2,7 @@
 This is the version 1 of this project, some more insights with some NLP techniques would be used to track some more insights form the group chat and all,
 which will all come in the next versions
 
+Library link: https://pypi.org/project/WhatsappInspect/1.0.3/
 
 ## Changes made
 1. Fixed different bugs
@@ -190,7 +191,7 @@ This will return this things as follows:
 
 ## Future works and improvements:
 Here is the list of the things, that I wanna improve the existing features and add some new features as follows:
-1. Wrap it as library and publish the inital version in pypi
+1. Improve the library.
 2. Add some existing features of sentiment analysis in order to save some time of the user.
 3. Make a simple one page website in django that can be used in phones or anywhere where user can upload the exported txt file, and can see all the results in a      dashboard.
 
