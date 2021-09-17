@@ -23,7 +23,7 @@ Calling the class, is done some way like this.
 
 To install this library first make a new virtual env and type:
 ```bash
-pip install WhatsappInspect==1.0.3
+pip install WhatsappInspect
 ```
 
 ```py
