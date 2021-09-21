@@ -1,4 +1,4 @@
-# Whatsapp-Analysis-version-1.0.1
+# Whatsapp-Analysis-version-1.0.5
 This is the version 1 of this project, some more insights with some NLP techniques would be used to track some more insights form the group chat and all,
 which will all come in the next versions
 
