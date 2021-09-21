@@ -112,55 +112,14 @@ class WpVisualize(object):
     ######### Particular uers's visualisations of the progressions of the messages w.r.t the day #########
 
     def _get_time_format(self, time):
-        if time == 0:
-            t = "12 AM"
-        elif time == 1:
-            t = "1 AM"
-        elif time == 2:
-            t = "2 AM"
-        elif time == 3:
-            t = "3 AM"
-        elif time == 4:
-            t = "4 AM"
-        elif time == 5:
-            t = "5 AM"
-        elif time == 6:
-            t = "6 AM"
-        elif time == 7:
-            t = "7 AM"
-        elif time == 8:
-            t = "8 AM"
-        elif time == 9:
-            t = "9 AM"
-        elif time == 10:
-            t = "10 AM"
-        elif time == 11:
-            t = "11 AM"
-        elif time == 12:
-            t = "12 PM"
-        elif time == 13:
-            t = "1 PM"
-        elif time == 14:
-            t = "2 PM"
-        elif time == 15:
-            t = "3 PM"
-        elif time == 16:
-            t = "4 PM"
-        elif time == 17:
-            t = "5 PM"
-        elif time == 18:
-            t = "6 PM"
-        elif time == 19:
-            t = "7 PM"
-        elif time == 20:
-            t = "8 PM"
-        elif time == 21:
-            t = "9 PM"
-        elif time == 22:
-            t = "10 PM"
-        elif time == 23:
-            t = "11 PM"
-        return t
+        time_in_words = ["12 AM"]
+        for t in range(1, 12):
+            time_in_words.append(str(t) + " AM")
+        
+        time_in_words.append("12 PM")
+        for t in range(13, 24):
+            time_in_words.append(str(t-12) + " PM")
+        return time_in_words[time]
 
     def get_active_times_user(self, user):
         user = " " + user
