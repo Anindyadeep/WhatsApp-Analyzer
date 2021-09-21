@@ -1,0 +1,10 @@
+README.md
+setup.py
+WhatsappInspect.egg-info/PKG-INFO
+WhatsappInspect.egg-info/SOURCES.txt
+WhatsappInspect.egg-info/dependency_links.txt
+WhatsappInspect.egg-info/requires.txt
+WhatsappInspect.egg-info/top_level.txt
+wpa/__init__.py
+wpa/functions.py
+wpa/visualize.py
